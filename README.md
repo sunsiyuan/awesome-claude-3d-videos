@@ -2,6 +2,8 @@
 
 ![Awesome Claude 3D Videos](assets/banner.jpg)
 
+[English](README.md) · [中文](README.zh.md)
+
 3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video. **476 works**, each linked to the creator's original post; **80 with the prompt** the creator shared.
 
 When a new Claude model lands, its first 3D works are added here within a day.

@@ -87,4 +87,26 @@ md += ["", "## What gets in", "",
 md += ["", "## Credits", "", "Every video and prompt belongs to its creator, linked from each entry; previews are 3-second excerpts shown only to point to the original post. If you made one of these and want it changed or removed, open an issue.", "",
        "Seed data: [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) (CC BY 4.0) and [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) (MIT).", "",
        "Know a Claude-made 3D video that belongs here? [Add it](https://github.com/sunsiyuan/awesome-claude-3d-videos/issues/new?template=add-a-work.yml) — see [CONTRIBUTING](CONTRIBUTING.md)."]
-open(f'{H}/README.md', 'w').write('\n'.join(md) + '\n'); print(n, 'works,', npr, 'prompts')
+open(f'{H}/README.md', 'w').write('\n'.join(md) + '\n')
+ZH = [("3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video.", "Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Three.js、WebGL、着色器、Blender Python）再渲成视频。"),
+      ("works**, each linked to the creator's original post;", "条作品**，每条都链到作者的原帖；"), ("with the prompt** the creator shared.", "条附作者公开的提示词**。"),
+      ("When a new Claude model lands, its first 3D works are added here within a day.", "新的 Claude 模型一发布，第一批 3D 作品会在一天内收进来。"),
+      ("**Make one with your own product, photos or footage →", "**用你自己的产品、照片或素材做一条 →"),
+      ("Tags show what the creator said they used:", "标签是作者自己说用了什么："), ("(WebGL/GLSL)", "（WebGL/GLSL）"), ("(you can play it in a browser). No tag means the creator didn't say.", "（能在浏览器里玩）。没标签表示作者没说。"),
+      ("## Contents", "## 目录"), ("## Next model watch", "## 新模型首发"), ("## Editor's picks", "## 精选"), ("The most beautiful and finished ones, picked by eye, not by likes.", "按画面挑的最精美、最完整的作品，不看点赞。"),
+      ("## Most liked", "## 最受欢迎"), ("## What gets in", "## 收录标准"),
+      ("Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here.", "据报道 Claude Fable 5.5 和下一代 Opus 都快了，泄露的演示是 Three.js 和 Blender。发布当天的第一批 3D 作品放这里。"),
+      ("- Made with Claude (the creator says so), with a real 3D space in the picture: objects with volume and light, and a camera that can move through them.", "- 作者说明是 Claude 做的，画面里是真的 3D 空间：有体积和光影的物体，镜头能在里面移动。"),
+      ("- Out: flat motion graphics drawn with a 3D library (text, logos, cards on a plane facing the camera), plain screen recordings of an interface, and model-vs-model comparisons with no finished piece.", "- 不收：用 3D 库画的平面动效（正对镜头的文字、logo、卡片）、单纯的界面录屏、没有成品的模型对比。"),
+      ("- Editor's picks are chosen by eye for finish and beauty; Most liked is by likes on the original post.", "- 精选按画面的完成度和美感挑；最受欢迎按原帖点赞数排。"),
+      ("## Credits", "## 署名"), ("Every video and prompt belongs to its creator, linked from each entry; previews are 3-second excerpts shown only to point to the original post. If you made one of these and want it changed or removed, open an issue.", "每条视频和提示词都归作者所有，每条都链到原帖；预览是 3 秒片段，只用来指向原帖。作者想修改或下架，提一个 issue 即可。"),
+      ("Seed data:", "初始数据："), ("Know a Claude-made 3D video that belongs here?", "知道应该收进来的 Claude 3D 作品？"), ("— see", "——见")]
+zh = '\n'.join(md)
+for a, b in ZH: zh = zh.replace(a, b)
+for k, t in SEC: pass
+zh = zh.replace('# Awesome Claude 3D Videos', '# Awesome Claude 3D Videos（中文）', 1)
+lang = '[English](README.md) · [中文](README.zh.md)'
+open(f'{H}/README.zh.md', 'w').write(zh.replace('![Awesome Claude 3D Videos](assets/banner.jpg)', '![Awesome Claude 3D Videos](assets/banner.jpg)\n\n' + lang, 1) + '\n')
+en = open(f'{H}/README.md').read().replace('![Awesome Claude 3D Videos](assets/banner.jpg)', '![Awesome Claude 3D Videos](assets/banner.jpg)\n\n' + lang, 1)
+open(f'{H}/README.md', 'w').write(en)
+print(n, 'works,', npr, 'prompts')
