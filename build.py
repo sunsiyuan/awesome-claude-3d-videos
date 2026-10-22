@@ -45,7 +45,7 @@ top = sorted([e for e in E.values() if e.get('likes')], key=lambda e: -e['likes'
 n, npr = len(E), sum(1 for e in E.values() if e.get('prompt'))
 md = ["# Awesome Claude 3D Videos", "",
       f"3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video. **{n} works**, each linked to the creator's original post; **{npr} with the prompt** the creator shared.",
-      "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Most liked](#most-liked)"]
+      "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Make one with your own product, photos or footage → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Most liked](#most-liked)"]
 md += [f"- [{t}](#{anchor(t)}) ({len(by[k])})" for k, t in SEC if by[k]] + ["- [Credits](#credits)", "", "## Next model watch", ""]
 md += [line(e) for e in NEW] if NEW else ["Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here."]
 md += ["", "## Most liked", ""] + [line(e) for e in top]
