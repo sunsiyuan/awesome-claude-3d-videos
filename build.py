@@ -88,7 +88,8 @@ md += ["", "## Credits", "", "Every video and prompt belongs to its creator, lin
        "Seed data: [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) (CC BY 4.0) and [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) (MIT).", "",
        "Know a Claude-made 3D video that belongs here? [Add it](https://github.com/sunsiyuan/awesome-claude-3d-videos/issues/new?template=add-a-work.yml) — see [CONTRIBUTING](CONTRIBUTING.md)."]
 open(f'{H}/README.md', 'w').write('\n'.join(md) + '\n')
-ZH = [("3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video.", "Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Three.js、WebGL、着色器、Blender Python）再渲成视频。"),
+ZH = [("- [Next model watch](#next-model-watch)", "- [新模型首发](#新模型首发)"), ("- [Editor's picks](#editors-picks)", "- [精选](#精选)"), ("- [Most liked](#most-liked)", "- [最受欢迎](#最受欢迎)"), ("- [What gets in](#what-gets-in)", "- [收录标准](#收录标准)"), ("- [Credits](#credits)", "- [署名](#署名)"),
+      ("3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video.", "Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Three.js、WebGL、着色器、Blender Python）再渲成视频。"),
       ("works**, each linked to the creator's original post;", "条作品**，每条都链到作者的原帖；"), ("with the prompt** the creator shared.", "条附作者公开的提示词**。"),
       ("When a new Claude model lands, its first 3D works are added here within a day.", "新的 Claude 模型一发布，第一批 3D 作品会在一天内收进来。"),
       ("**Make one with your own product, photos or footage →", "**用你自己的产品、照片或素材做一条 →"),

@@ -11,9 +11,9 @@ Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Thr
 **用你自己的产品、照片或素材做一条 → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**
 
 ## 目录
-- [Next model watch](#next-model-watch)
-- [Editor's picks](#editors-picks)
-- [Most liked](#most-liked)
+- [新模型首发](#新模型首发)
+- [精选](#精选)
+- [最受欢迎](#最受欢迎)
 - [Games & interactive worlds](#games--interactive-worlds) (172)
 - [Scenes & worlds](#scenes--worlds) (81)
 - [Art & generative](#art--generative) (17)
@@ -26,8 +26,8 @@ Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Thr
 - [Data](#data) (7)
 - [AI about itself](#ai-about-itself) (69)
 - [Other](#other) (2)
-- [What gets in](#what-gets-in)
-- [Credits](#credits)
+- [收录标准](#收录标准)
+- [署名](#署名)
 
 标签是作者自己说用了什么： `Blender` `Three.js` `Shader` （WebGL/GLSL） `Unreal` `Tripo` `Bevy` `Godot` `Playable` （能在浏览器里玩）。没标签表示作者没说。
 
