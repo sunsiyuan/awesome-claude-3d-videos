@@ -69,6 +69,12 @@ md = ["# Awesome Claude 3D Videos [![Awesome](https://awesome.re/badge.svg)](htt
       "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Make one with your own product, photos or footage → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Editor's picks](#editors-picks)", "- [Most liked](#most-liked)"]
 md += [f"- [{t}](#{anchor(t)}) ({len(by[k])})" for k, t in SEC if by[k]] + ["- [What gets in](#what-gets-in)", "- [Credits](#credits)", "", "Tags show what the creator said they used: `Blender` `Three.js` `Shader` (WebGL/GLSL) `Unreal` `Tripo` `Bevy` `Godot` `Playable` (you can play it in a browser). No tag means the creator didn't say.", "", "## Next model watch", ""]
 md += [line(e) for e in NEW] if NEW else ["Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here."]
+def tcell(e):
+    p_ = pid(e['url']); tg = ' '.join(f'<code>{t}</code>' for t in sorted(TAG.get(p_, ())))
+    pr = f' · <a href="prompts/{e["slug"]}.md">prompt</a>' if e.get('prompt') else ''
+    lk = f' · ♥ {e["likes"]:,}' if e.get('likes') else ''
+    return (f'<td valign="top" width="25%"><a href="{e["url"]}"><img src="previews/thumbs/{p_}.jpg" width="200" alt=""></a><br>'
+            f'<a href="{e["url"]}">{e["title"].strip()}</a><br><sub>@{e["author"]}{lk}{pr}<br>{tg}</sub></td>')
 def cell(e):
     g = f"previews/{pid(e['url'])}.gif"
     img = f'<a href="{e["url"]}"><img src="{g}" width="260" alt="{e["title"]}"></a><br>' if os.path.exists(os.path.join(H, g)) else ''
@@ -79,7 +85,11 @@ picks = [E[p] for p in cur['picks'] if p in E]
 md += ["", "## Editor's picks", "", "The most beautiful and finished ones, picked by eye, not by likes.", "", "<table>"] + ["<tr>" + "".join(cell(e) for e in picks[i:i + 3]) + "</tr>" for i in range(0, len(picks), 3)] + ["</table>"]
 md += ["", "## Most liked", "", "<table>"] + ["<tr>" + "".join(cell(e) for e in grid[i:i + 3]) + "</tr>" for i in range(0, len(grid), 3)] + ["</table>", ""] + [line(e) for e in top if e not in grid]
 for k, t in SEC:
-    if by[k]: md += ["", f"## {t}", ""] + [line(e) for e in sorted(by[k], key=lambda e: -(e.get('likes') or 0))]
+    if not by[k]: continue
+    items = sorted(by[k], key=lambda e: -(e.get('likes') or 0))
+    withimg = [e for e in items if os.path.exists(os.path.join(H, f"previews/thumbs/{pid(e['url'])}.jpg"))]
+    md += ["", f"## {t}", "", "<table>"] + ["<tr>" + "".join(tcell(e) for e in withimg[i:i + 4]) + "</tr>" for i in range(0, len(withimg), 4)] + ["</table>", ""]
+    md += [line(e) for e in items if e not in withimg]
 md += ["", "## What gets in", "",
        "- Made with Claude (the creator says so), with a real 3D space in the picture: objects with volume and light, and a camera that can move through them.",
        "- Out: flat motion graphics drawn with a 3D library (text, logos, cards on a plane facing the camera), plain screen recordings of an interface, and model-vs-model comparisons with no finished piece.",
