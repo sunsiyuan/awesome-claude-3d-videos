@@ -15,6 +15,7 @@ for x in json.load(open(f'{D}/videos.json')):
     if not (x['category'] == '3d' or 'threejs' in x.get('tech_tags', [])): continue
     p = pid(x['post_url'])
     if not p: continue
+    if p not in E and x['category'] != '3d': continue
     e = E.setdefault(p, dict(url=x['post_url'], author=x['author'], title=None, domain='game_interactive' if x['category'] == 'interactive' else 'scene', likes=eng.get(p)))
     if not x.get('prompt_partial') and x.get('prompt'): e['prompt'] = x['prompt']; e['slug'] = x['slug']
     if not e.get('title'): e['title'] = titles.get(x['slug'])
@@ -28,7 +29,8 @@ for x in extra:
     if old and not e.get('likes'): e['likes'] = old.get('likes')
     E[pid(x['url'])] = e
     if x.get('new'): NEW.append(e)
-E = {p: e for p, e in E.items() if e.get('title')}
+cur = json.load(open(f'{D}/curation.json')) if os.path.exists(f'{D}/curation.json') else {'picks': [], 'drop': []}
+E = {p: e for p, e in E.items() if e.get('title') and p not in cur['drop']}
 SEC = [('game_interactive', 'Games & interactive worlds'), ('scene', 'Scenes & worlds'), ('art_abstract', 'Art & generative'), ('product_ad', 'Products & launches'),
        ('education_science', 'Science & explainers'), ('history_culture', 'History & culture'), ('story_short', 'Short stories'), ('music_video', 'Music videos'),
        ('humor_meme', 'Humor'), ('data_viz', 'Data'), ('ai_self_meta', 'AI about itself'), ('other', 'Other')]
@@ -48,15 +50,17 @@ top = sorted([e for e in E.values() if e.get('likes')], key=lambda e: -e['likes'
 n, npr = len(E), sum(1 for e in E.values() if e.get('prompt'))
 md = ["# Awesome Claude 3D Videos", "",
       f"3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video. **{n} works**, each linked to the creator's original post; **{npr} with the prompt** the creator shared.",
-      "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Make one with your own product, photos or footage → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Most liked](#most-liked)"]
+      "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Make one with your own product, photos or footage → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Editor's picks](#editors-picks)", "- [Most liked](#most-liked)"]
 md += [f"- [{t}](#{anchor(t)}) ({len(by[k])})" for k, t in SEC if by[k]] + ["- [Credits](#credits)", "", "## Next model watch", ""]
 md += [line(e) for e in NEW] if NEW else ["Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here."]
 def cell(e):
     g = f"previews/{pid(e['url'])}.gif"
     img = f'<a href="{e["url"]}"><img src="{g}" width="260" alt="{e["title"]}"></a><br>' if os.path.exists(os.path.join(H, g)) else ''
-    return f'<td valign="top" width="33%">{img}<a href="{e["url"]}">{e["title"]}</a><br><sub>@{e["author"]} · ♥ {e["likes"]:,}</sub></td>'
+    return f'<td valign="top" width="33%">{img}<a href="{e["url"]}">{e["title"]}</a><br><sub>@{e["author"]}{" · ♥ " + format(e["likes"], ",") if e.get("likes") else ""}</sub></td>'
 top = sorted([e for e in E.values() if e.get('likes')], key=lambda e: -e['likes'])[:30]
 grid = [e for e in top if os.path.exists(os.path.join(H, f"previews/{pid(e['url'])}.gif"))][:24]
+picks = [E[p] for p in cur['picks'] if p in E]
+md += ["", "## Editor's picks", "", "The most beautiful and finished ones, picked by eye, not by likes.", "", "<table>"] + ["<tr>" + "".join(cell(e) for e in picks[i:i + 3]) + "</tr>" for i in range(0, len(picks), 3)] + ["</table>"]
 md += ["", "## Most liked", "", "<table>"] + ["<tr>" + "".join(cell(e) for e in grid[i:i + 3]) + "</tr>" for i in range(0, len(grid), 3)] + ["</table>", ""] + [line(e) for e in top if e not in grid]
 for k, t in SEC:
     if by[k]: md += ["", f"## {t}", ""] + [line(e) for e in sorted(by[k], key=lambda e: -(e.get('likes') or 0))]

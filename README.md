@@ -1,6 +1,6 @@
 # Awesome Claude 3D Videos
 
-3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video. **514 works**, each linked to the creator's original post; **114 with the prompt** the creator shared.
+3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video. **476 works**, each linked to the creator's original post; **80 with the prompt** the creator shared.
 
 When a new Claude model lands, its first 3D works are added here within a day.
 
@@ -8,24 +8,37 @@ When a new Claude model lands, its first 3D works are added here within a day.
 
 ## Contents
 - [Next model watch](#next-model-watch)
+- [Editor's picks](#editors-picks)
 - [Most liked](#most-liked)
-- [Games & interactive worlds](#games--interactive-worlds) (182)
-- [Scenes & worlds](#scenes--worlds) (105)
+- [Games & interactive worlds](#games--interactive-worlds) (172)
+- [Scenes & worlds](#scenes--worlds) (81)
 - [Art & generative](#art--generative) (17)
-- [Products & launches](#products--launches) (50)
+- [Products & launches](#products--launches) (48)
 - [Science & explainers](#science--explainers) (28)
 - [History & culture](#history--culture) (11)
 - [Short stories](#short-stories) (27)
-- [Music videos](#music-videos) (11)
+- [Music videos](#music-videos) (10)
 - [Humor](#humor) (4)
 - [Data](#data) (7)
-- [AI about itself](#ai-about-itself) (70)
+- [AI about itself](#ai-about-itself) (69)
 - [Other](#other) (2)
 - [Credits](#credits)
 
 ## Next model watch
 
 Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here.
+
+## Editor's picks
+
+The most beautiful and finished ones, picked by eye, not by likes.
+
+<table>
+<tr><td valign="top" width="33%"><a href="https://x.com/AxtonLiu/status/2103119648271290566"><img src="previews/2103119648271290566.gif" width="260" alt="Pelican riding a bicycle along pier"></a><br><a href="https://x.com/AxtonLiu/status/2103119648271290566">Pelican riding a bicycle along pier</a><br><sub>@AxtonLiu · ♥ 31</sub></td><td valign="top" width="33%"><a href="https://x.com/addyosmani/status/2102436416437580159"><img src="previews/2102436416437580159.gif" width="260" alt="Pelican in a Three.js city (launch demo)"></a><br><a href="https://x.com/addyosmani/status/2102436416437580159">Pelican in a Three.js city (launch demo)</a><br><sub>@addyosmani · ♥ 1,988</sub></td><td valign="top" width="33%"><a href="https://x.com/MengTo/status/2102760783344189761"><img src="previews/2102760783344189761.gif" width="260" alt="Interactive Three.js Japanese boat scene"></a><br><a href="https://x.com/MengTo/status/2102760783344189761">Interactive Three.js Japanese boat scene</a><br><sub>@MengTo · ♥ 5,817</sub></td></tr>
+<tr><td valign="top" width="33%"><a href="https://x.com/hayashimon1/status/2102576886182453454"><img src="previews/2102576886182453454.gif" width="260" alt="Three.js 3D river stream simulation"></a><br><a href="https://x.com/hayashimon1/status/2102576886182453454">Three.js 3D river stream simulation</a><br><sub>@hayashimon1 · ♥ 1,918</sub></td><td valign="top" width="33%"><a href="https://x.com/MatthewBerman/status/2102483668468195539"><img src="previews/2102483668468195539.gif" width="260" alt="San Francisco in Unreal Engine with NPCs"></a><br><a href="https://x.com/MatthewBerman/status/2102483668468195539">San Francisco in Unreal Engine with NPCs</a><br><sub>@MatthewBerman · ♥ 2,224</sub></td><td valign="top" width="33%"><a href="https://x.com/scottstts/status/2102498299190079933"><img src="previews/2102498299190079933.gif" width="260" alt="Cat with GPU-rendered fur"></a><br><a href="https://x.com/scottstts/status/2102498299190079933">Cat with GPU-rendered fur</a><br><sub>@scottstts · ♥ 143</sub></td></tr>
+<tr><td valign="top" width="33%"><a href="https://x.com/somasoma_blue/status/2103039084944138621"><img src="previews/2103039084944138621.gif" width="260" alt="Slapstick cat and dog animation"></a><br><a href="https://x.com/somasoma_blue/status/2103039084944138621">Slapstick cat and dog animation</a><br><sub>@somasoma_blue · ♥ 12</sub></td><td valign="top" width="33%"><a href="https://x.com/blueemi99/status/2102511304456212763"><img src="previews/2102511304456212763.gif" width="260" alt="Self-portrait in voxel blocks"></a><br><a href="https://x.com/blueemi99/status/2102511304456212763">Self-portrait in voxel blocks</a><br><sub>@blueemi99 · ♥ 573</sub></td><td valign="top" width="33%"><a href="https://x.com/superalesha/status/2102779758408774104"><img src="previews/2102779758408774104.gif" width="260" alt="LHC proton collision simulation"></a><br><a href="https://x.com/superalesha/status/2102779758408774104">LHC proton collision simulation</a><br><sub>@superalesha · ♥ 537</sub></td></tr>
+<tr><td valign="top" width="33%"><a href="https://x.com/Voxyz_ai/status/2103117246860345550"><img src="previews/2103117246860345550.gif" width="260" alt="Interactive black hole gravitational lensing lab"></a><br><a href="https://x.com/Voxyz_ai/status/2103117246860345550">Interactive black hole gravitational lensing lab</a><br><sub>@Voxyz_ai · ♥ 15</sub></td><td valign="top" width="33%"><a href="https://x.com/Tariq_at/status/2102561072624410878"><img src="previews/2102561072624410878.gif" width="260" alt="Claude Opus conceptual promo"></a><br><a href="https://x.com/Tariq_at/status/2102561072624410878">Claude Opus conceptual promo</a><br><sub>@Tariq_at · ♥ 4</sub></td><td valign="top" width="33%"><a href="https://x.com/manaimovie/status/2103138089790996843"><img src="previews/2103138089790996843.gif" width="260" alt="3D anime character animation demo"></a><br><a href="https://x.com/manaimovie/status/2103138089790996843">3D anime character animation demo</a><br><sub>@manaimovie · ♥ 132</sub></td></tr>
+<tr><td valign="top" width="33%"><a href="https://x.com/JustinPerea/status/2102893186330841502"><img src="previews/2102893186330841502.gif" width="260" alt="Procedural demoscene generated by Opus"></a><br><a href="https://x.com/JustinPerea/status/2102893186330841502">Procedural demoscene generated by Opus</a><br><sub>@JustinPerea · ♥ 981</sub></td><td valign="top" width="33%"><a href="https://x.com/Stefan_3D_AI/status/2102471841046786153"><img src="previews/2102471841046786153.gif" width="260" alt="Opus 5.5 vs GPT-6 3D test"></a><br><a href="https://x.com/Stefan_3D_AI/status/2102471841046786153">Opus 5.5 vs GPT-6 3D test</a><br><sub>@Stefan_3D_AI · ♥ 1,828</sub></td><td valign="top" width="33%"><a href="https://x.com/MengTo/status/2103122947133309311"><img src="previews/2103122947133309311.gif" width="260" alt="3D dragon ship coded with Opus"></a><br><a href="https://x.com/MengTo/status/2103122947133309311">3D dragon ship coded with Opus</a><br><sub>@MengTo · ♥ 480</sub></td></tr>
+</table>
 
 ## Most liked
 
@@ -37,15 +50,15 @@ Claude Fable 5.5 and the next Opus are reported to be close, with early demos in
 <tr><td valign="top" width="33%"><a href="https://x.com/Stefan_3D_AI/status/2102471841046786153"><img src="previews/2102471841046786153.gif" width="260" alt="Opus 5.5 vs GPT-6 3D test"></a><br><a href="https://x.com/Stefan_3D_AI/status/2102471841046786153">Opus 5.5 vs GPT-6 3D test</a><br><sub>@Stefan_3D_AI · ♥ 1,828</sub></td><td valign="top" width="33%"><a href="https://x.com/alexalbert__/status/2102466523164274839"><img src="previews/2102466523164274839.gif" width="260" alt="San Francisco street before the 1906 earthquake"></a><br><a href="https://x.com/alexalbert__/status/2102466523164274839">San Francisco street before the 1906 earthquake</a><br><sub>@alexalbert__ · ♥ 1,163</sub></td><td valign="top" width="33%"><a href="https://x.com/claudeai/status/2102471870692180179"><img src="previews/2102471870692180179.gif" width="260" alt="Earthrise moment reconstructed in 3D"></a><br><a href="https://x.com/claudeai/status/2102471870692180179">Earthrise moment reconstructed in 3D</a><br><sub>@claudeai · ♥ 1,088</sub></td></tr>
 <tr><td valign="top" width="33%"><a href="https://x.com/JustinPerea/status/2102893186330841502"><img src="previews/2102893186330841502.gif" width="260" alt="Procedural demoscene generated by Opus"></a><br><a href="https://x.com/JustinPerea/status/2102893186330841502">Procedural demoscene generated by Opus</a><br><sub>@JustinPerea · ♥ 981</sub></td><td valign="top" width="33%"><a href="https://x.com/LCSlates/status/2102503027340988559"><img src="previews/2102503027340988559.gif" width="260" alt="Animated mosaic tile art"></a><br><a href="https://x.com/LCSlates/status/2102503027340988559">Animated mosaic tile art</a><br><sub>@LCSlates · ♥ 970</sub></td><td valign="top" width="33%"><a href="https://x.com/Hesamation/status/2103457566978162901"><img src="previews/2103457566978162901.gif" width="260" alt="Lonely robot in a post-human world"></a><br><a href="https://x.com/Hesamation/status/2103457566978162901">Lonely robot in a post-human world</a><br><sub>@Hesamation · ♥ 833</sub></td></tr>
 <tr><td valign="top" width="33%"><a href="https://x.com/gandamu_ml/status/2102919394775220530"><img src="previews/2102919394775220530.gif" width="260" alt="90s style demoscene demo"></a><br><a href="https://x.com/gandamu_ml/status/2102919394775220530">90s style demoscene demo</a><br><sub>@gandamu_ml · ♥ 625</sub></td><td valign="top" width="33%"><a href="https://x.com/blueemi99/status/2102511304456212763"><img src="previews/2102511304456212763.gif" width="260" alt="Self-portrait in voxel blocks"></a><br><a href="https://x.com/blueemi99/status/2102511304456212763">Self-portrait in voxel blocks</a><br><sub>@blueemi99 · ♥ 573</sub></td><td valign="top" width="33%"><a href="https://x.com/scheemunai/status/2102515382556954935"><img src="previews/2102515382556954935.gif" width="260" alt="Orbital Forge planet base"></a><br><a href="https://x.com/scheemunai/status/2102515382556954935">Orbital Forge planet base</a><br><sub>@scheemunai · ♥ 559</sub></td></tr>
-<tr><td valign="top" width="33%"><a href="https://x.com/Stefan_3D_AI/status/2102641562824135022"><img src="previews/2102641562824135022.gif" width="260" alt="Rigged 3D monster with animations in Blender"></a><br><a href="https://x.com/Stefan_3D_AI/status/2102641562824135022">Rigged 3D monster with animations in Blender</a><br><sub>@Stefan_3D_AI · ♥ 553</sub></td><td valign="top" width="33%"><a href="https://x.com/twoclipping/status/2102554209166000267"><img src="previews/2102554209166000267.gif" width="260" alt="Minimal product showcase with real footage"></a><br><a href="https://x.com/twoclipping/status/2102554209166000267">Minimal product showcase with real footage</a><br><sub>@twoclipping · ♥ 542</sub></td><td valign="top" width="33%"><a href="https://x.com/superalesha/status/2102779758408774104"><img src="previews/2102779758408774104.gif" width="260" alt="LHC proton collision simulation"></a><br><a href="https://x.com/superalesha/status/2102779758408774104">LHC proton collision simulation</a><br><sub>@superalesha · ♥ 537</sub></td></tr>
+<tr><td valign="top" width="33%"><a href="https://x.com/Stefan_3D_AI/status/2102641562824135022"><img src="previews/2102641562824135022.gif" width="260" alt="Rigged 3D monster with animations in Blender"></a><br><a href="https://x.com/Stefan_3D_AI/status/2102641562824135022">Rigged 3D monster with animations in Blender</a><br><sub>@Stefan_3D_AI · ♥ 553</sub></td><td valign="top" width="33%"><a href="https://x.com/superalesha/status/2102779758408774104"><img src="previews/2102779758408774104.gif" width="260" alt="LHC proton collision simulation"></a><br><a href="https://x.com/superalesha/status/2102779758408774104">LHC proton collision simulation</a><br><sub>@superalesha · ♥ 537</sub></td><td valign="top" width="33%"><a href="https://x.com/RyanSael/status/2102740041621762166"><img src="previews/2102740041621762166.gif" width="260" alt="Interactive 3D AI data center simulation"></a><br><a href="https://x.com/RyanSael/status/2102740041621762166">Interactive 3D AI data center simulation</a><br><sub>@RyanSael · ♥ 483</sub></td></tr>
 </table>
 
 - [Minecraft-style world with realistic lighting](https://x.com/ChrisGPT/status/2102644063950475477) — [@ChrisGPT](https://x.com/ChrisGPT) · ♥ 2,347
-- [Interactive 3D AI data center simulation](https://x.com/RyanSael/status/2102740041621762166) — [@RyanSael](https://x.com/RyanSael) · ♥ 483
 - [3D dragon ship coded with Opus](https://x.com/MengTo/status/2103122947133309311) — [@MengTo](https://x.com/MengTo) · ♥ 480
 - [Hand-drawn catapult physics simulation](https://x.com/claudeai/status/2102471877184627062) — [@claudeai](https://x.com/claudeai) · ♥ 451
 - [3D IKEA assembly guide](https://x.com/deedydas/status/2103174501345493197) — [@deedydas](https://x.com/deedydas) · ♥ 446
 - [Testing Opus 5.5 controlling After Effects](https://x.com/aicreataro/status/2102656273112326609) — [@aicreataro](https://x.com/aicreataro) · ♥ 442
+- [Walkable 3D house from a photo and floor plan](https://x.com/higgsfield_ai/status/2102499166635352354) — [@higgsfield_ai](https://x.com/higgsfield_ai) · ♥ 410
 
 ## Games & interactive worlds
 
@@ -221,62 +234,28 @@ Claude Fable 5.5 and the next Opus are reported to be close, with early demos in
 - [F1 live 3D race telemetry dashboard](https://x.com/anbu369/status/2103830442184978770) — [@anbu369](https://x.com/anbu369)
 - [AI generated Subway Surfers game clone](https://x.com/_rjach/status/2103830991441973447) — [@_rjach](https://x.com/_rjach)
 - [Interactive 3D house design tool demo](https://x.com/LaN_Thoughts/status/2103831516161966087) — [@LaN_Thoughts](https://x.com/LaN_Thoughts)
-- [Cats hidden in Starry Night](https://x.com/MandelDuck/status/2103802923465768972) — [@MandelDuck](https://x.com/MandelDuck) · [prompt](prompts/mandelduck-768972.md)
-- [X-wings attack Star Destroyer squadron](https://x.com/0xChuckstock/status/2103804606794879327) — [@0xChuckstock](https://x.com/0xChuckstock) · [prompt](prompts/0xchuckstock-879327.md)
-- [Surreal architecture and landscape exploration](https://x.com/LexnLin/status/2103194052850241739) — [@LexnLin](https://x.com/LexnLin) · [prompt](prompts/lexnlin-241739.md)
-- [Top-down police chase arcade game](https://x.com/froessell/status/2103789415323562325) — [@froessell](https://x.com/froessell) · [prompt](prompts/froessell-562325.md)
-- [Multiplayer destructible environment shooter](https://x.com/Ved_CJ/status/2103708392930066575) — [@Ved_CJ](https://x.com/Ved_CJ) · [prompt](prompts/ved-cj-066575.md)
-- [Arcade racing game experience](https://x.com/_nieGRAMotny_/status/2103128800909197521) — [@_nieGRAMotny_](https://x.com/_nieGRAMotny_) · [prompt](prompts/niegramotny-197521.md)
-- [Tron inspired game experience](https://x.com/0xRathi/status/2102986585004511319) — [@0xRathi](https://x.com/0xRathi) · [prompt](prompts/0xrathi-511319.md)
-- [Star Wars retro style animation](https://x.com/Ryzoft/status/2102989395359887481) — [@Ryzoft](https://x.com/Ryzoft) · [prompt](prompts/ryzoft-887481.md)
-- [Mobile game reward celebration animation](https://x.com/op7418/status/2103724883301814408) — [@op7418](https://x.com/op7418) · [prompt](prompts/op7418-814408.md)
-- [Translucent jelly dice physics](https://x.com/SpacyApps/status/2105833401127157886) — [@SpacyApps](https://x.com/SpacyApps) · [prompt](prompts/spacyapps-157886.md)
 
 ## Scenes & worlds
 
 - [Building growth sequence in 3D](https://x.com/techartist_/status/2102503719762018434) — [@techartist_](https://x.com/techartist_) · ♥ 1,993
 - [Pelican in a Three.js city (launch demo)](https://x.com/addyosmani/status/2102436416437580159) — [@addyosmani](https://x.com/addyosmani) · ♥ 1,988
 - [Shinkansen with 5,112 parts and 430 seats](https://x.com/higgsfield_ai/status/2102507018372436264) — [@higgsfield_ai](https://x.com/higgsfield_ai) · ♥ 1,918
-- [Minimal product showcase with real footage](https://x.com/twoclipping/status/2102554209166000267) — [@twoclipping](https://x.com/twoclipping) · [prompt](prompts/twoclipping-000267.md) · ♥ 542
 - [Walkable 3D house from a photo and floor plan](https://x.com/higgsfield_ai/status/2102499166635352354) — [@higgsfield_ai](https://x.com/higgsfield_ai) · ♥ 410
 - [Sand animation of American history](https://x.com/Michaelzsguo/status/2102592355165782312) — [@Michaelzsguo](https://x.com/Michaelzsguo) · [prompt](prompts/michaelzsguo-782312.md) · ♥ 309
 - [Volcanic island with sea life and aurora](https://x.com/vib3coded/status/2102450239923720440) — [@vib3coded](https://x.com/vib3coded) · ♥ 208
-- [PayBox logo dynamic motion reel](https://x.com/0xValure/status/2103603025579331584) — [@0xValure](https://x.com/0xValure) · [prompt](prompts/0xvalure-331584.md)
-- [Professional portfolio motion graphics showcase](https://x.com/heyiammallik/status/2103837803587293397) — [@heyiammallik](https://x.com/heyiammallik) · [prompt](prompts/heyiammallik-293397.md)
-- [Distilbook dynamic motion graphics showreel](https://x.com/ajith_io/status/2103800569584562538) — [@ajith_io](https://x.com/ajith_io) · [prompt](prompts/ajith-io-562538.md)
 - [UI shape morphing animation sequence](https://x.com/__morse/status/2103485566570369333) — [@__morse](https://x.com/__morse) · [prompt](prompts/morse-369333.md)
 - [Advanced motion graphics designer showreel](https://x.com/lukasersil/status/2103742861971726495) — [@lukasersil](https://x.com/lukasersil) · [prompt](prompts/lukasersil-726495.md)
 - [Premium badge unlock celebration scene](https://x.com/BThreeAgency/status/2103739079745827092) — [@BThreeAgency](https://x.com/BThreeAgency) · [prompt](prompts/bthreeagency-827092.md)
-- [Motion graphics designer showreel video](https://x.com/itisRazak/status/2103517930424332386) — [@itisRazak](https://x.com/itisRazak) · [prompt](prompts/itisrazak-332386.md)
 - [Brand launch film continuous take](https://x.com/twoclipping/status/2103835273813496100) — [@twoclipping](https://x.com/twoclipping) · [prompt](prompts/twoclipping-496100.md)
-- [Chain startup pitch video](https://x.com/SPEARwtf/status/2103857153308029058) — [@SPEARwtf](https://x.com/SPEARwtf) · [prompt](prompts/spearwtf-029058.md)
-- [Product daily spending visualization video](https://x.com/felipemoller/status/2103846311149936736) — [@felipemoller](https://x.com/felipemoller) · [prompt](prompts/felipemoller-936736.md)
 - [AI data center interior visualization](https://x.com/mdaman010/status/2103845689713111079) — [@mdaman010](https://x.com/mdaman010) · [prompt](prompts/mdaman010-111079.md)
-- [Retro futuristic launch video](https://x.com/johnsavage_ai/status/2103792769982427263) — [@johnsavage_ai](https://x.com/johnsavage_ai) · [prompt](prompts/johnsavage-ai-427263.md)
 - [AI data center visualization](https://x.com/Sayan_shanky/status/2103736579449868515) — [@Sayan_shanky](https://x.com/Sayan_shanky) · [prompt](prompts/sayan-shanky-868515.md)
-- [Personal storytelling video sequence](https://x.com/Madhav_XO/status/2103605007396524440) — [@Madhav_XO](https://x.com/Madhav_XO) · [prompt](prompts/madhav-xo-524440.md)
-- [Premium motion graphics showreel](https://x.com/samuel_spitz/status/2103544855276503053) — [@samuel_spitz](https://x.com/samuel_spitz) · [prompt](prompts/samuel-spitz-503053.md)
-- [Motion graphics app promotion video](https://x.com/cansincengiz_me/status/2103532681774424245) — [@cansincengiz_me](https://x.com/cansincengiz_me) · [prompt](prompts/cansincengiz-me-424245.md)
-- [Alchemy infrastructure company showreel](https://x.com/onewaysidewalks/status/2103500011581440008) — [@onewaysidewalks](https://x.com/onewaysidewalks) · [prompt](prompts/onewaysidewalks-440008.md)
-- [Heeya product motion graphics video](https://x.com/anas0ra/status/2103490331815952637) — [@anas0ra](https://x.com/anas0ra) · [prompt](prompts/anas0ra-952637.md)
 - [Three dimensional pagoda exploration](https://x.com/BuildFastWithAI/status/2103483174957597035) — [@BuildFastWithAI](https://x.com/BuildFastWithAI) · [prompt](prompts/buildfastwithai-597035.md)
 - [Minimal product showcase motion video](https://x.com/RaphaelAubryy/status/2103413596822687877) — [@RaphaelAubryy](https://x.com/RaphaelAubryy) · [prompt](prompts/raphaelaubryy-687877.md)
-- [Product introduction video](https://x.com/mtvneo_/status/2103407629880148436) — [@mtvneo_](https://x.com/mtvneo_) · [prompt](prompts/mtvneo-148436.md)
-- [Modern Peter Gabriel style music video](https://x.com/DavidShulmanFL/status/2103336310089842921) — [@DavidShulmanFL](https://x.com/DavidShulmanFL) · [prompt](prompts/davidshulmanfl-842921.md)
 - [Gradient descent ball movement animation](https://x.com/anirockshady/status/2103195903012032809) — [@anirockshady](https://x.com/anirockshady) · [prompt](prompts/anirockshady-032809.md)
-- [Battle royale interface screen mockup](https://x.com/MyCodeCoach/status/2103181065976459574) — [@MyCodeCoach](https://x.com/MyCodeCoach) · [prompt](prompts/mycodecoach-459574.md)
-- [Dynamic fireworks particle display](https://x.com/FornYapayZeka/status/2102888241443795431) — [@FornYapayZeka](https://x.com/FornYapayZeka) · [prompt](prompts/fornyapayzeka-795431.md)
-- [Animated glass tile mosaic film](https://x.com/zeezomb/status/2102906701552726206) — [@zeezomb](https://x.com/zeezomb) · [prompt](prompts/zeezomb-726206.md)
 - [Particle illustration beach environment](https://x.com/ishuagra02/status/2102920408743678129) — [@ishuagra02](https://x.com/ishuagra02) · [prompt](prompts/ishuagra02-678129.md)
-- [Explosion effect with unique scene](https://x.com/FornYapayZeka/status/2102971287224135914) — [@FornYapayZeka](https://x.com/FornYapayZeka) · [prompt](prompts/fornyapayzeka-135914.md)
 - [Golden Gate Bridge with effects](https://x.com/MondemSuraj/status/2108716642540691517) — [@MondemSuraj](https://x.com/MondemSuraj) · [prompt](prompts/mondemsuraj-691517.md)
-- [Interactive camera lens breakdown](https://x.com/aichrislee/status/2108709764817408244) — [@aichrislee](https://x.com/aichrislee) · [prompt](prompts/aichrislee-408244.md)
-- [Interactive turbofan engine breakdown](https://x.com/0xSpikez/status/2108550549532483865) — [@0xSpikez](https://x.com/0xSpikez) · [prompt](prompts/0xspikez-483865.md)
-- [QR code message repair explainer](https://x.com/eyadnour/status/2108314868189172216) — [@eyadnour](https://x.com/eyadnour) · [prompt](prompts/eyadnour-172216.md)
-- [Interactive human heart anatomy](https://x.com/aichrislee/status/2107985027254378670) — [@aichrislee](https://x.com/aichrislee) · [prompt](prompts/aichrislee-378670.md)
 - [Interactive mechanical watch mechanism](https://x.com/aichrislee/status/2107622585307476025) — [@aichrislee](https://x.com/aichrislee) · [prompt](prompts/aichrislee-476025.md)
 - [Procedural Napoleon field cannon](https://x.com/thebuggeddev/status/2107449104926482912) — [@thebuggeddev](https://x.com/thebuggeddev) · [prompt](prompts/thebuggeddev-482912.md)
-- [Thirty year space exploration journey](https://x.com/theSethian/status/2106447666519384517) — [@theSethian](https://x.com/theSethian) · [prompt](prompts/thesethian-384517.md)
 - [Castle above clouds dream world](https://x.com/YouWareAI/status/2108825933608300653) — [@YouWareAI](https://x.com/YouWareAI) · [prompt](prompts/youwareai-300653.md)
 - [Logo animation studio experience](https://x.com/juancarlos17626/status/2108663865936429530) — [@juancarlos17626](https://x.com/juancarlos17626) · [prompt](prompts/juancarlos17626-429530.md)
 - [Procedural golden hour manor](https://x.com/Thusatharan/status/2108544807333433543) — [@Thusatharan](https://x.com/Thusatharan) · [prompt](prompts/thusatharan-433543.md)
@@ -365,9 +344,7 @@ Claude Fable 5.5 and the next Opus are reported to be close, with early demos in
 - [Xbox controller from SVG to 3D](https://x.com/marmaduke091/status/2102506267755639143) — [@marmaduke091](https://x.com/marmaduke091) · ♥ 218
 - [Roblox game trailer showcase](https://x.com/NiloTechInc/status/2102741813719138661) — [@NiloTechInc](https://x.com/NiloTechInc) · ♥ 104
 - [Squid Game recreated with AI and Blender](https://x.com/OriSilver/status/2102817977812824335) — [@OriSilver](https://x.com/OriSilver) · ♥ 31
-- [Quick Elements product promo ad](https://x.com/deweytn/status/2102787822855893072) — [@deweytn](https://x.com/deweytn) · ♥ 7
 - [Claude Opus conceptual promo](https://x.com/Tariq_at/status/2102561072624410878) — [@Tariq_at](https://x.com/Tariq_at) · ♥ 4
-- [Productivity directory promo](https://x.com/shushant_l/status/2103829449359966629) — [@shushant_l](https://x.com/shushant_l) · ♥ 2
 - [AI animated windmill in Blender](https://x.com/higgsfield_ai/status/2102453658889953717) — [@higgsfield_ai](https://x.com/higgsfield_ai)
 - [Schedulr app promotional video](https://x.com/Goldiez2599/status/2102463234586685869) — [@Goldiez2599](https://x.com/Goldiez2599)
 - [AI creating 3D octopus in Blender](https://x.com/higgsfield_ai/status/2102526940859232433) — [@higgsfield_ai](https://x.com/higgsfield_ai)
@@ -491,7 +468,6 @@ Claude Fable 5.5 and the next Opus are reported to be close, with early demos in
 ## Music videos
 
 - [Claude Opus rap music video](https://x.com/aj_dev_smith/status/2102803889183736141) — [@aj_dev_smith](https://x.com/aj_dev_smith) · ♥ 1,842
-- [Pixel art music video for Nightcall](https://x.com/gandamu_ml/status/2103116003689550013) — [@gandamu_ml](https://x.com/gandamu_ml) · ♥ 71
 - [Tool music video generated with code](https://x.com/cube__lol/status/2102879729594343605) — [@cube__lol](https://x.com/cube__lol) · ♥ 22
 - [Code-generated pop punk music video](https://x.com/aj_dev_smith/status/2102575577563570450) — [@aj_dev_smith](https://x.com/aj_dev_smith)
 - [AI alignment doomer music video](https://x.com/eudaemonea/status/2102976471291572386) — [@eudaemonea](https://x.com/eudaemonea)
@@ -526,7 +502,6 @@ Claude Fable 5.5 and the next Opus are reported to be close, with early demos in
 - [Procedural demoscene generated by Opus](https://x.com/JustinPerea/status/2102893186330841502) — [@JustinPerea](https://x.com/JustinPerea) · ♥ 981
 - [Testing Opus 5.5 controlling After Effects](https://x.com/aicreataro/status/2102656273112326609) — [@aicreataro](https://x.com/aicreataro) · ♥ 442
 - [Virtual AI history museum showcase](https://x.com/RyanSael/status/2103021886045348073) — [@RyanSael](https://x.com/RyanSael) · ♥ 112
-- [Claude Opus 5.5 launch promo video](https://x.com/ish_creative/status/2102966807376334856) — [@ish_creative](https://x.com/ish_creative) · ♥ 16
 - [AI 3D house exploded view reconstruction](https://x.com/zdkiel_labs/status/2102722754172850310) — [@zdkiel_labs](https://x.com/zdkiel_labs) · ♥ 4
 - [3D Waymo vehicle model comparison](https://x.com/karankendre/status/2102088929923260696) — [@karankendre](https://x.com/karankendre)
 - [Opus 5.5 vs GPT rocket comparison](https://x.com/EnvolDev/status/2102445122357174690) — [@EnvolDev](https://x.com/EnvolDev)
