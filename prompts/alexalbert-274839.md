@@ -1,4 +1,4 @@
-# Historic Market Street San Francisco 1906
+# San Francisco street before the 1906 earthquake
 
 By [@alexalbert__](https://x.com/alexalbert__) · [original post](https://x.com/alexalbert__/status/2102466523164274839)
 

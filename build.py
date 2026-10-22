@@ -1,6 +1,6 @@
 """Build README.md and prompts/ from data/: the seed collections plus data/extra.json (works added by hand, e.g. on a model's launch day).
     python3 build.py
-data/extra.json: [{"url": "...", "author": "...", "title": "...", "section": "scene|game_interactive|...", "prompt": "... or null", "likes": 123, "model": "Fable 5.5"}]"""
+data/extra.json: [{"url": "...", "author": "...", "title": "...", "section": "scene|game_interactive|...", "prompt": "... or null", "likes": 123, "model": "Fable 5.5", "new": true}]   new = goes under Next model watch"""
 import csv, json, re, collections, os
 H = os.path.dirname(os.path.abspath(__file__)); D = os.path.join(H, 'data')
 pid = lambda u: re.search(r'status/(\d+)', u).group(1) if u and 'status/' in u else None
@@ -23,8 +23,11 @@ NEW = []
 for x in extra:
     e = dict(url=x['url'], author=x['author'], title=x['title'], domain=x.get('section', 'scene'), prompt=x.get('prompt'), likes=x.get('likes'), model=x.get('model'))
     if e['prompt']: e['slug'] = re.sub(r'\W+', '-', f"{x['author']}-{pid(x['url'])}").lower()
+    old = E.get(pid(x['url']))
+    if old and not e['prompt'] and old.get('prompt'): e['prompt'], e['slug'] = old['prompt'], old['slug']
+    if old and not e.get('likes'): e['likes'] = old.get('likes')
     E[pid(x['url'])] = e
-    if x.get('model'): NEW.append(e)
+    if x.get('new'): NEW.append(e)
 E = {p: e for p, e in E.items() if e.get('title')}
 SEC = [('game_interactive', 'Games & interactive worlds'), ('scene', 'Scenes & worlds'), ('art_abstract', 'Art & generative'), ('product_ad', 'Products & launches'),
        ('education_science', 'Science & explainers'), ('history_culture', 'History & culture'), ('story_short', 'Short stories'), ('music_video', 'Music videos'),
@@ -48,10 +51,16 @@ md = ["# Awesome Claude 3D Videos", "",
       "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Make one with your own product, photos or footage → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Most liked](#most-liked)"]
 md += [f"- [{t}](#{anchor(t)}) ({len(by[k])})" for k, t in SEC if by[k]] + ["- [Credits](#credits)", "", "## Next model watch", ""]
 md += [line(e) for e in NEW] if NEW else ["Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here."]
-md += ["", "## Most liked", ""] + [line(e) for e in top]
+def cell(e):
+    g = f"previews/{pid(e['url'])}.gif"
+    img = f'<a href="{e["url"]}"><img src="{g}" width="260" alt="{e["title"]}"></a><br>' if os.path.exists(os.path.join(H, g)) else ''
+    return f'<td valign="top" width="33%">{img}<a href="{e["url"]}">{e["title"]}</a><br><sub>@{e["author"]} · ♥ {e["likes"]:,}</sub></td>'
+top = sorted([e for e in E.values() if e.get('likes')], key=lambda e: -e['likes'])[:30]
+grid = [e for e in top if os.path.exists(os.path.join(H, f"previews/{pid(e['url'])}.gif"))][:24]
+md += ["", "## Most liked", "", "<table>"] + ["<tr>" + "".join(cell(e) for e in grid[i:i + 3]) + "</tr>" for i in range(0, len(grid), 3)] + ["</table>", ""] + [line(e) for e in top if e not in grid]
 for k, t in SEC:
     if by[k]: md += ["", f"## {t}", ""] + [line(e) for e in sorted(by[k], key=lambda e: -(e.get('likes') or 0))]
-md += ["", "## Credits", "", "Every video and prompt belongs to its creator, linked from each entry. If you made one of these and want it changed or removed, open an issue.", "",
+md += ["", "## Credits", "", "Every video and prompt belongs to its creator, linked from each entry; previews are 3-second excerpts shown only to point to the original post. If you made one of these and want it changed or removed, open an issue.", "",
        "Seed data: [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) (CC BY 4.0) and [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) (MIT).", "",
        "Know a Claude-made 3D video that belongs here? Open a pull request with the link."]
 open(f'{H}/README.md', 'w').write('\n'.join(md) + '\n'); print(n, 'works,', npr, 'prompts')
