@@ -1,0 +1,12 @@
+name: Change or remove a work
+description: For creators
+title: "Remove: "
+body:
+  - type: input
+    id: url
+    attributes: {label: Link to the work}
+    validations: {required: true}
+  - type: dropdown
+    id: what
+    attributes: {label: What should happen, options: ["Remove it", "Change the title or credit", "Remove the preview only"]}
+    validations: {required: true}

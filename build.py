@@ -86,5 +86,5 @@ md += ["", "## What gets in", "",
        "- Editor's picks are chosen by eye for finish and beauty; Most liked is by likes on the original post.", ""]
 md += ["", "## Credits", "", "Every video and prompt belongs to its creator, linked from each entry; previews are 3-second excerpts shown only to point to the original post. If you made one of these and want it changed or removed, open an issue.", "",
        "Seed data: [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) (CC BY 4.0) and [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) (MIT).", "",
-       "Know a Claude-made 3D video that belongs here? Open a pull request with the link."]
+       "Know a Claude-made 3D video that belongs here? [Add it](https://github.com/sunsiyuan/awesome-claude-3d-videos/issues/new?template=add-a-work.yml) — see [CONTRIBUTING](CONTRIBUTING.md)."]
 open(f'{H}/README.md', 'w').write('\n'.join(md) + '\n'); print(n, 'works,', npr, 'prompts')

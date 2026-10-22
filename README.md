@@ -590,4 +590,4 @@ Every video and prompt belongs to its creator, linked from each entry; previews 
 
 Seed data: [athemeroy/awesome-claude-5-5-videos](https://github.com/athemeroy/awesome-claude-5-5-videos) (CC BY 4.0) and [yihui-dev/awesome-opus5-5-videos](https://github.com/yihui-dev/awesome-opus5-5-videos) (MIT).
 
-Know a Claude-made 3D video that belongs here? Open a pull request with the link.
+Know a Claude-made 3D video that belongs here? [Add it](https://github.com/sunsiyuan/awesome-claude-3d-videos/issues/new?template=add-a-work.yml) — see [CONTRIBUTING](CONTRIBUTING.md).

@@ -1,0 +1,29 @@
+name: Add a work
+description: Suggest a 3D video made with Claude
+title: "Add: "
+labels: ["new work"]
+body:
+  - type: input
+    id: url
+    attributes: {label: Link to the original post, placeholder: "https://x.com/creator/status/..."}
+    validations: {required: true}
+  - type: input
+    id: title
+    attributes: {label: Short title, placeholder: "Volcanic island with sea life and aurora"}
+    validations: {required: true}
+  - type: input
+    id: tools
+    attributes: {label: Made with, description: "Only what the creator said: Blender, Three.js, Shader, Unreal, Tripo...", placeholder: "Blender"}
+  - type: input
+    id: model
+    attributes: {label: Claude model, placeholder: "Opus 5.5"}
+  - type: textarea
+    id: prompt
+    attributes: {label: Prompt, description: "If the creator shared it"}
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Check
+      options:
+        - label: It shows a real 3D space, not flat graphics or a screen recording
+          required: true
