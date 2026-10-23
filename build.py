@@ -66,7 +66,7 @@ top = sorted([e for e in E.values() if e.get('likes')], key=lambda e: -e['likes'
 n, npr = len(E), sum(1 for e in E.values() if e.get('prompt'))
 md = ["# Awesome Claude 3D Videos [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)", "", "![Awesome Claude 3D Videos](assets/banner.jpg)", "",
       f"3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video. **{n} works**, each linked to the creator's original post; **{npr} with the prompt** the creator shared.",
-      "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Make one with your own product, photos or footage → [ultramotion.ai](https://ultramotion.ai/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Editor's picks](#editors-picks)", "- [Most liked](#most-liked)"]
+      "", "When a new Claude model lands, its first 3D works are added here within a day.", "", "**Copyable prompts for these 3D styles — Apple-style teardowns, Pixar-style shorts, game-like worlds → [ultramotion.ai/styles/3d](https://ultramotion.ai/styles/3d/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**", "", "## Contents", "- [Next model watch](#next-model-watch)", "- [Editor's picks](#editors-picks)", "- [Most liked](#most-liked)"]
 md += [f"- [{t}](#{anchor(t)}) ({len(by[k])})" for k, t in SEC if by[k]] + ["- [What gets in](#what-gets-in)", "- [Credits](#credits)", "", "Tags show what the creator said they used: `Blender` `Three.js` `Shader` (WebGL/GLSL) `Unreal` `Tripo` `Bevy` `Godot` `Playable` (you can play it in a browser). No tag means the creator didn't say.", "", "## Next model watch", ""]
 md += [line(e) for e in NEW] if NEW else ["Claude Fable 5.5 and the next Opus are reported to be close, with early demos in Three.js and Blender. First 3D works from launch day go here."]
 def tcell(e):
@@ -102,7 +102,7 @@ ZH = [("- [Next model watch](#next-model-watch)", "- [新模型首发](#新模�
       ("3D scenes, worlds, games and films made by Claude — written as code (Three.js, WebGL, shaders, Blender Python) and rendered to video.", "Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Three.js、WebGL、着色器、Blender Python）再渲成视频。"),
       ("works**, each linked to the creator's original post;", "条作品**，每条都链到作者的原帖；"), ("with the prompt** the creator shared.", "条附作者公开的提示词**。"),
       ("When a new Claude model lands, its first 3D works are added here within a day.", "新的 Claude 模型一发布，第一批 3D 作品会在一天内收进来。"),
-      ("**Make one with your own product, photos or footage →", "**用你自己的产品、照片或素材做一条 →"),
+      ("**Copyable prompts for these 3D styles — Apple-style teardowns, Pixar-style shorts, game-like worlds →", "**这些 3D 风格的提示词，可直接复制——苹果式拆解、皮克斯风短片、游戏级场景 →"),
       ("Tags show what the creator said they used:", "标签是作者自己说用了什么："), ("(WebGL/GLSL)", "（WebGL/GLSL）"), ("(you can play it in a browser). No tag means the creator didn't say.", "（能在浏览器里玩）。没标签表示作者没说。"),
       ("## Contents", "## 目录"), ("## Next model watch", "## 新模型首发"), ("## Editor's picks", "## 精选"), ("The most beautiful and finished ones, picked by eye, not by likes.", "按画面挑的最精美、最完整的作品，不看点赞。"),
       ("## Most liked", "## 最受欢迎"), ("## What gets in", "## 收录标准"),
