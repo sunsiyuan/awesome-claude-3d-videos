@@ -10,6 +10,8 @@ Claude 做的 3D 场景、世界、游戏和短片——用代码写出来（Thr
 
 **这些 3D 风格的提示词，可直接复制——苹果式拆解、皮克斯风短片、游戏级场景 → [ultramotion.ai/styles/3d](https://ultramotion.ai/styles/3d/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**
 
+不是 3D？**另外 100 多种视频风格，提示词可直接复制 → [Awesome Claude Video Styles](https://github.com/sunsiyuan/awesome-claude-video-styles)**
+
 ## 目录
 - [新模型首发](#新模型首发)
 - [精选](#精选)

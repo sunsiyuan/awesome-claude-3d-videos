@@ -10,6 +10,8 @@ When a new Claude model lands, its first 3D works are added here within a day.
 
 **Copyable prompts for these 3D styles — Apple-style teardowns, Pixar-style shorts, game-like worlds → [ultramotion.ai/styles/3d](https://ultramotion.ai/styles/3d/?utm_source=github&utm_medium=readme&utm_campaign=awesome-claude-3d-videos)**
 
+Not 3D? **100+ more video styles with copyable prompts → [Awesome Claude Video Styles](https://github.com/sunsiyuan/awesome-claude-video-styles)**
+
 ## Contents
 - [Next model watch](#next-model-watch)
 - [Editor's picks](#editors-picks)
